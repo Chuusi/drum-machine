@@ -1,0 +1,164 @@
+main{
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#drum-machine{
+  width: 60%;
+  border: 1px solid black;
+}
+
+.btn{
+  aspect-ratio: 1;
+}
+
+.button-row{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.center-content{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.power{
+  flex-direction: column;
+}
+
+.control-container{
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.toggle-btn{
+  width: 50px;
+  height: 25px;
+  border-radius: 20px;
+  transition: .2s ease-in-out;
+}
+
+.round-black{
+  width: 15px;
+  height: 15px;
+  background-color: black;
+  border-radius: 50%;
+  position: relative;
+  top: 5px;
+  transition: .2s ease-in-out;
+}
+
+.anim{
+  background-color: #bb2d3b !important;
+  animation: bounce .4s ease-in-out;
+}
+
+@keyframes bounce {
+  0%{
+    scale: 1;
+  }
+  25%{
+    scale: .8;
+  }
+  50%{
+    scale: 1.1
+  }
+  100%{
+    scale: 1
+  }
+}
+
+.drum-pad{
+  font-family: 'Roboto', sans-serif;
+  background: salmon;
+  border: none;
+  padding: 1rem;
+  color: #fff;
+  outline: none;
+  border-radius: 4px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, .3);
+  position: relative;
+}
+
+.btn:focus-visible{
+  color: white;
+  background-color: #fa8072;
+  border-color: transparent !important;
+  box-shadow: none;
+}
+
+.btn:focus-visible:hover{
+  background-color: #bb2d3b;
+}
+
+
+.wave{
+  background: #fff;
+  height: 10px;
+  width: 10px;
+  border-radius: 100%;
+  animation: ripple .4s 1 forwards;
+  position: absolute;
+  left: 45%;
+  top: 45%;
+}
+
+.txt-md {
+  font-size: 1.3em;
+}
+
+
+
+@keyframes ripple {
+  0% {
+    transform: scale(0);
+    opacity: 1;
+  }
+
+  100% {
+    transform: scale(15);
+    opacity: 0;
+  }
+}
+
+input[type=range] {
+  -webkit-appearance: none;
+  appearance: none;
+  overflow: hidden;
+  margin: 10px 0;
+  width: 100%;
+  padding: 0px 5px;
+  border-radius: 15px;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 10px;
+  box-shadow: 1px 1px 5px #50555C;
+  background: #FA8072;
+  border-radius: 15px;
+}
+
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 10px;
+  width: 20px;
+  border-radius: 15px;
+  border: 2px solid #BB2D3B;
+  background-color: #ffffff;
+  box-shadow: -410px 0 0 400px #BB2D3B;
+}
+
+
+
+
+
+
+
+
+
